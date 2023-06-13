@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: #4e24c1;
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #227bc0;
+        }
+        h1 {
+            color: #fff;
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>“Bienvenidos a TeLoVendo”.</h1>
+    </div>
+    <div class="container2">
+        <p>Para poder visualizar el contenido de la pagina web por medio de django, debes seguir los siguientes pasos</p><br></div>
+    <div class="container2">    
+        <ul>
+            <li>crear archivo urls.py en la carpeta de su aplicación</li>
+            <li>ir a la carpeta principal de su proyecto, entrar al archivo urls.py y crear un path que dirija a la urls.py que se encuentra en la carpeta de su aplicación </li>
+            <li>entrar a settings.py y en la parte que dice INSTALLED_APPS agregar el nombre de su aplicación</li>
+            <li>en su carpeta de aplicación entrar a urls.py y agregar en urlspatterns un path a la función que se encontrara en el archivo views que dirige a la página del sitio</li>
+            <li>crear la carpeta templetes y detro de esta crear una carpeta landing que contendra el archivo html</li>
+            <li>en views.py usar render que lleve a la direccion donde se encuentra el html, en este caso landing/index.html  </li>
+            <li>crear el html y mejorarlo visualmente</li>
+        </ul>
+    </div>
+
+</body>
+</html>
