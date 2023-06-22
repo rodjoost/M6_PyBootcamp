@@ -1,0 +1,16 @@
+{% extends 'base_layout.html'%}
+
+{% block content %}
+<h1>Listado de proveedores en base de datos</h1>
+
+<h3>Proveedores:</h3>
+<div class="container">
+    {% for proveedor in proveedor %}
+    <ul>
+        <li>Nombre: {{ proveedor.nombre }}</li>
+        <li>Email: {{ proveedor.email }}</li>     
+        <li>Celular: {{ proveedor.celular }}</li>
+    </ul>
+    {% endfor %}
+</div>
+{% endblock content %}

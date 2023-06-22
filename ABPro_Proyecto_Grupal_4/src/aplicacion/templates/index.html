@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+    <div class="container">
+        <h1>“Bienvenidos a TeLoVendo”.</h1>
+    </div>
+    <div class="container2">
+        <p>Para poder visualizar el contenido de la pagina web por medio de django, debes seguir los siguientes pasos</p><br></div>
+    <div class="container2">    
+        <ul>
+            <li>crear archivo urls.py en la carpeta de su aplicación</li>
+            <li>ir a la carpeta principal de su proyecto, entrar al archivo urls.py y crear un path que dirija a la urls.py que se encuentra en la carpeta de su aplicación </li>
+            <li>entrar a settings.py y en la parte que dice INSTALLED_APPS agregar el nombre de su aplicación</li>
+            <li>en su carpeta de aplicación entrar a urls.py y agregar en urlspatterns un path a la función que se encontrara en el archivo views que dirige a la página del sitio</li>
+            <li>crear la carpeta templetes y detro de esta crear una carpeta landing que contendra el archivo html</li>
+            <li>en views.py usar render que lleve a la direccion donde se encuentra el html, en este caso landing/index.html  </li>
+            <li>crear el html y mejorarlo visualmente</li>
+        </ul>
+    </div>
+{% endblock content %}

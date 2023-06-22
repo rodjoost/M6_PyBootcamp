@@ -1,0 +1,21 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+
+<h1>Clientes</h1>
+<p>{{usuario}}</p>
+
+
+{% for cliente in clientes %}
+    <p>Nombre: {{ cliente.name }}</p>
+    <p>Edad: {{ cliente.edad }}</p>
+    <p>Email: {{ cliente.email }}</p>
+    <p>Ciudad: {{ cliente.ciudad }}</p>
+    <p>Teléfono: {{ cliente.telefono }}</p>
+    ----------------------------------------------------------------
+{% endfor %}
+<h1>USUARIO EXTRA</h1>
+{% for usuario in usuarios_extra %}
+    <p>{{ usuario }}</p>
+{% endfor %}
+
+{% endblock content %}
