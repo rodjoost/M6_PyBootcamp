@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %} 
+
+{% block content %}
+<br>
+<h1>Bienvenido {{user.username}}</h1>
+<br>
+{% load static %}
+<center>
+    <img src="{% static 'vegeta_under.png' %}" alt="Vegeta Under Construction" height="300">
+    <br>
+    <br>
+    <p>Bienvenido a la Aplicación del Módulo 6</p>
+    <p>Estamos en Construcción</p>
+</center>
+
+{% endblock %}
