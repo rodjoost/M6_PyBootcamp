@@ -1,0 +1,29 @@
+{% extends 'base_layout.html' %} 
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-center">
+    <br>
+    <h2>Registro de Usuarios</h2>
+    <br><br>
+</div>
+<br><br>
+<div class="d-flex align-items-center justify-content-center" >
+    {% if messages %}
+        {% for message in messages %}
+        <div class="{{ message.tags }}">{{ message|capfirst}}</div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+<div class="d-flex align-items-center justify-content-center" >
+    <form action="" method="post">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class='btn btn-dark'>Registrarse</button>
+
+    </form>
+</div>
+
+{% endblock %}
